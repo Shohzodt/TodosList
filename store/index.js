@@ -7,7 +7,7 @@ export const actions = {
   async getTodos ({ commit }) {
     try {
       const response = await this.$axios.get(
-        "https://jsonplaceholder.typicode.com/todos"
+        "https://jsonplaceholder.typicode.com/posts?userId=1"
       )
 
       if (response.status === 200) {
@@ -21,7 +21,7 @@ export const actions = {
   async getSingleTodos ({ commit }, { id }) {
     try {
       const response = await this.$axios.get(
-        `https://jsonplaceholder.typicode.com/todos/${id}`
+        `https://jsonplaceholder.typicode.com/posts/${id}`
       )
 
       if (response.status === 200) {

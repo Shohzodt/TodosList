@@ -4,7 +4,7 @@ export default {
     port: 7000
   },
   head: {
-    title: 'test',
+    title: 'Todo app',
     htmlAttrs: {
       lang: 'en'
     },
